@@ -8,8 +8,5 @@ def selection_sort(list):
 
         return [list[0]] + selection_sort(list[1::])        # function call other parts
 
-array=[]
-for i in range(10):
-      array.append(random.randint(1,100))
-print(array)
-print(f'selection : {selection_sort(array)}')
+array=[random.randint(1,100) for i in range(10)]
+print(f'Before Sort : {array} \n After Sort : {selection_sort(array)}')
